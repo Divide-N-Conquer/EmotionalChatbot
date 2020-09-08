@@ -1,0 +1,1912 @@
+{
+  "intents": [
+    {
+      "intent": "CC_Fee_Waiver",
+      "examples": [
+        {
+          "text": "fee waiver"
+        },
+        {
+          "text": "I want to get my credit card fee waived."
+        },
+        {
+          "text": "Why am I charged on my credit card?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Feedback_Complaint",
+      "examples": [
+        {
+          "text": "internet banking"
+        },
+        {
+          "text": "I want to make a complaint"
+        },
+        {
+          "text": "I want to provide feedback"
+        }
+      ],
+      "description": "Customers provide feedback or complaint"
+    },
+    {
+      "intent": "Goodbye",
+      "examples": [
+        {
+          "text": "Bye bye"
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "It's okay"
+        },
+        {
+          "text": "no"
+        },
+        {
+          "text": "Thanks"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "agree_disagree",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Okay",
+          "synonyms": [
+            "Alright"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "That is not possible",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "charged_status",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "is charged",
+          "synonyms": [
+            "ya",
+            "Yes",
+            "yes, I am charged",
+            "yup"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "not charged",
+          "synonyms": [
+            "No",
+            "No, I was not charged",
+            "nope",
+            "Not charged"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "credit_card_type",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Classic",
+          "synonyms": [
+            "classic credit card"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "e Shopping",
+          "synonyms": [
+            "online shopping credit card"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Gold",
+          "synonyms": [
+            "gold credit card"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Petrol Visa",
+          "synonyms": [
+            "petrol card",
+            "petronas visa credit card"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "feedback_complaint_type",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ATM Machines",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bad Customer Service",
+          "synonyms": [
+            "Customer Service "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Internet Banking",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Physical Branch Issue",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "internet_banking_platform",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "application",
+          "synonyms": [
+            "app"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "website",
+          "synonyms": [
+            "browser"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "need_banker",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No, I don't need a banker",
+          "synonyms": [
+            "No"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "yes, I want to talk to a banker",
+          "synonyms": [
+            "sure",
+            "yes "
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "operating_system",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Android",
+          "synonyms": [
+            "Huawei",
+            "Oppo",
+            "Samsung",
+            "Vivo",
+            "XiaoMi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "iOS",
+          "synonyms": [
+            "Apple",
+            "iPhone"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "requirement_status",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no, I have not reached the requirement",
+          "synonyms": [
+            "no",
+            "nope"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "yes, I have reached the requirement",
+          "synonyms": [
+            "ya",
+            "yes",
+            "yup"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "web_browser",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Google Chrome",
+          "synonyms": [
+            "Chrome",
+            "Google"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Internet Explorer",
+          "synonyms": [
+            "Explorer",
+            "IE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Microsoft Edge",
+          "synonyms": [
+            "Edge"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mozilla Firefox",
+          "synonyms": [
+            "Firefox",
+            "Mozila",
+            "Mozzila"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Opera",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Safari",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "I am still learning. Could you rephrase your sentence? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1597771487048",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How long have your been using this card?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1597772157114",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1597772157126",
+      "previous_sibling": "handler_2_1597772157126"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1597772550261",
+      "context": {
+        "requirement_status": "@requirement_status"
+      },
+      "conditions": "@requirement_status",
+      "event_name": "input",
+      "dialog_node": "handler_10_1597772550277"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "First, I would like to know how many years have you been holding this card and are you being charged for the fee.  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597721296385",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1597721465237",
+      "previous_sibling": "node_10_1597723576489"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "First, I would like to know how many years have you been holding this card and are you being charged for the fee.  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597772108069",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1597772156442",
+      "previous_sibling": "node_8_1597772761893"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "May I know which browser are you using",
+            "options": [
+              {
+                "label": "Internet Explorer",
+                "value": {
+                  "input": {
+                    "text": "Internet Explorer"
+                  }
+                }
+              },
+              {
+                "label": "Google Chrome",
+                "value": {
+                  "input": {
+                    "text": "Google Chrome"
+                  }
+                }
+              },
+              {
+                "label": "Mozilla Firefox",
+                "value": {
+                  "input": {
+                    "text": "Mozilla Firefox"
+                  }
+                }
+              },
+              {
+                "label": "Microsoft Edge",
+                "value": {
+                  "input": {
+                    "text": "Microsoft Edge"
+                  }
+                }
+              },
+              {
+                "label": "Opera",
+                "value": {
+                  "input": {
+                    "text": "Opera"
+                  }
+                }
+              },
+              {
+                "label": "Safari",
+                "value": {
+                  "input": {
+                    "text": "Safari"
+                  }
+                }
+              }
+            ],
+            "description": "You may type or click one of these options below.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1598426672908",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598444958726"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "May I know which browser are you using?",
+            "options": [
+              {
+                "label": "Internet Explorer",
+                "value": {
+                  "input": {
+                    "text": "Internet Explorer"
+                  }
+                }
+              },
+              {
+                "label": "Google Chrome",
+                "value": {
+                  "input": {
+                    "text": "Google Chrome"
+                  }
+                }
+              },
+              {
+                "label": "Mozilla Firefox",
+                "value": {
+                  "input": {
+                    "text": "Mozilla Firefox"
+                  }
+                }
+              },
+              {
+                "label": "Microsoft Edge",
+                "value": {
+                  "input": {
+                    "text": "Microsoft Edge"
+                  }
+                }
+              },
+              {
+                "label": "Opera",
+                "value": {
+                  "input": {
+                    "text": "Opera"
+                  }
+                }
+              },
+              {
+                "label": "Safari",
+                "value": {
+                  "input": {
+                    "text": "Safari"
+                  }
+                }
+              }
+            ],
+            "description": "You may type or click one of these options below.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_8_1598444959587",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598444959604",
+      "previous_sibling": "handler_5_1598444959604"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The fee will be waived if you have an annual spending of RM15,000. Have you reached the requirement? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597723147310",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1597723231659",
+      "previous_sibling": "node_6_1597723422931"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1597772157114",
+      "context": {
+        "year": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_2_1597772157126"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1597772191191",
+      "context": {
+        "charged_status": "@charged_status"
+      },
+      "conditions": "@charged_status",
+      "event_name": "input",
+      "dialog_node": "handler_2_1597772191197"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The fee will be waived if you have an annual spending of RM25,000. Have you reached the requirement?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1597772473166",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1597772549579",
+      "previous_sibling": "node_4_1597772644573"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "May I know what operating system are your device running on?",
+            "options": [
+              {
+                "label": "iOS",
+                "value": {
+                  "input": {
+                    "text": "iOS"
+                  }
+                }
+              },
+              {
+                "label": "Android",
+                "value": {
+                  "input": {
+                    "text": "Android"
+                  }
+                }
+              }
+            ],
+            "description": "You may type or click one of these options below.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1598445115838",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1598445139667"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "May I know what operating system are your device running on?",
+            "options": [
+              {
+                "label": "iOS",
+                "value": {
+                  "input": {
+                    "text": "iOS"
+                  }
+                }
+              },
+              {
+                "label": "Android",
+                "value": {
+                  "input": {
+                    "text": "Android"
+                  }
+                }
+              }
+            ],
+            "description": "You may type or click one of these options below.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_8_1598445140366",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1598445140379",
+      "previous_sibling": "handler_4_1598445140379"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1597722012257",
+      "context": {
+        "charged": "@charged_status"
+      },
+      "conditions": "@charged_status",
+      "event_name": "input",
+      "dialog_node": "handler_3_1597722012259"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1598445140366",
+      "context": {
+        "operating_system": "@operating_system"
+      },
+      "conditions": "@operating_system",
+      "event_name": "input",
+      "dialog_node": "handler_4_1598445140379"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            " Are you being charged?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1597722012257",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1597722012259",
+      "previous_sibling": "handler_3_1597722012259"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Did you spend over RM15,000?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1597723232229",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1597723232238",
+      "previous_sibling": "handler_6_1597723232238"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you charged on this credit card?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1597772191191",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1597772191197",
+      "previous_sibling": "handler_2_1597772191197"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1598444959587",
+      "context": {
+        "web_browser": "@web_browser"
+      },
+      "conditions": "@web_browser",
+      "event_name": "input",
+      "dialog_node": "handler_5_1598444959604"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1597723232229",
+      "context": {
+        "requirement": "@requirement_status"
+      },
+      "conditions": "@requirement_status",
+      "event_name": "input",
+      "dialog_node": "handler_6_1597723232238"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "May I know how long have you been using this card?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1597721466005",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1597721466013",
+      "previous_sibling": "handler_9_1597721466013"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you spent more than RM25,000?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1597772550261",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1597772550277",
+      "previous_sibling": "handler_10_1597772550277"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1597721466005",
+      "context": {
+        "years": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_9_1597721466013"
+    },
+    {
+      "type": "standard",
+      "title": "(no) not charged",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It seems like you don't have an issue. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597720654194",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "@charged_status:(not charged)",
+      "dialog_node": "node_10_1597721098723",
+      "previous_sibling": "node_9_1597720797426"
+    },
+    {
+      "type": "standard",
+      "title": "Classic",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Unfortunately, fee waiver is not applicable for this card. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597720521302",
+      "conditions": "@credit_card_type:Classic",
+      "dialog_node": "node_10_1597721186629",
+      "previous_sibling": "node_2_1597720654194"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am so sorry about it. The fees are charged wrongly. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597721296385",
+      "context": {
+        "banker": "required"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1597723462941"
+      },
+      "conditions": "$years<=3 &&  @charged_status:(is charged)",
+      "dialog_node": "node_10_1597723080826",
+      "previous_sibling": "node_9_1597722239298"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It seems like you don't have an issue. "
+              },
+              {
+                "text": "The fee is waived if you have an annual spending of RM15,000. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1597721296385",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "$years>3 && @charged_status:(not charged)",
+      "dialog_node": "node_10_1597723576489",
+      "previous_sibling": "node_1_1597723147310"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Alright, it seems like you don't have any issues with this. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1597723462941",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "@need_banker:(No, I don't need a banker)",
+      "dialog_node": "node_10_1597771263536",
+      "previous_sibling": "node_9_1597771070632"
+    },
+    {
+      "type": "standard",
+      "title": "Internet Banking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think our IT department messed up. We will contact the IT department."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Are you using the application or the website for the internet banking? ",
+            "options": [
+              {
+                "label": "Application",
+                "value": {
+                  "input": {
+                    "text": "Application"
+                  }
+                }
+              },
+              {
+                "label": "Website",
+                "value": {
+                  "input": {
+                    "text": "Website"
+                  }
+                }
+              }
+            ],
+            "description": "You may type or click one of these options below.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1597720806665",
+      "conditions": "@feedback_complaint_type:(Internet Banking)",
+      "dialog_node": "node_10_1598426577289",
+      "previous_sibling": "node_7_1597803726098"
+    },
+    {
+      "type": "standard",
+      "title": "Credit Card Fee",
+      "output": {
+        "generic": [
+          {
+            "title": "May I know your card type?",
+            "options": [
+              {
+                "label": "Petrol Visa",
+                "value": {
+                  "input": {
+                    "text": "Petrol Visa"
+                  }
+                }
+              },
+              {
+                "label": "Classic",
+                "value": {
+                  "input": {
+                    "text": "Classic"
+                  }
+                }
+              },
+              {
+                "label": "E Shopping",
+                "value": {
+                  "input": {
+                    "text": "E Shopping"
+                  }
+                }
+              },
+              {
+                "label": "Gold",
+                "value": {
+                  "input": {
+                    "text": "Gold"
+                  }
+                }
+              }
+            ],
+            "description": "You may type or click one of these options below.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#CC_Fee_Waiver",
+      "dialog_node": "node_1_1597720521302",
+      "previous_sibling": "node_1_1598417184287"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_2_1597721296385",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "$years>3 && @charged_status:(is charged)",
+      "dialog_node": "node_1_1597723147310",
+      "previous_sibling": "node_10_1597723080826"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for chatting with me! I hope I have helped you on your inquiry. "
+              },
+              {
+                "text": "Alrighty. Good bye!"
+              },
+              {
+                "text": "I hope I have helped you on your inquiry. Good bye!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "I am around if your need more help. Don't be shy :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Goodbye",
+      "dialog_node": "node_1_1597771487048",
+      "previous_sibling": "node_4_1597723462941"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am sorry about that. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1597721186629",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1597723462941"
+      },
+      "conditions": "@agree_disagree:(That is not possible)",
+      "dialog_node": "node_1_1598416773099",
+      "previous_sibling": "node_4_1598416665819"
+    },
+    {
+      "type": "standard",
+      "title": "After complaint/feedback - Anything else to add",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is there anything else that you would like to add? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$feedback_complaint:true",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1598417184287",
+      "previous_sibling": "node_8_1597720806665"
+    },
+    {
+      "type": "standard",
+      "title": "Petrol Visa",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Annual fees are not applied for this card. Are you charged on using this card? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597720521302",
+      "conditions": "@credit_card_type:(Petrol Visa)",
+      "dialog_node": "node_2_1597720654194"
+    },
+    {
+      "type": "frame",
+      "title": "E Shopping",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for the information."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597720521302",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@credit_card_type:(e Shopping)",
+      "dialog_node": "node_2_1597721296385",
+      "previous_sibling": "node_10_1597721186629"
+    },
+    {
+      "type": "frame",
+      "title": "Gold ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for the information"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597720521302",
+      "conditions": "@credit_card_type:Gold",
+      "dialog_node": "node_2_1597772108069",
+      "previous_sibling": "node_2_1597721296385"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am sorry to hear that. The fees are charged wrongly. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1597772473166",
+      "context": {
+        "banker": "required"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1597723462941"
+      },
+      "conditions": "@requirement_status:(yes, I have reached the requirement)",
+      "dialog_node": "node_2_1597772696183"
+    },
+    {
+      "type": "standard",
+      "title": "Suggestions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you have any suggestions on this issue? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1598417184287",
+      "conditions": "true",
+      "dialog_node": "node_2_1598417310621"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1597723479325",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1597771487048"
+      },
+      "conditions": "#Goodbye",
+      "dialog_node": "node_3_1598423715312"
+    },
+    {
+      "type": "standard",
+      "title": "Refer to banker",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "May I refer you to a banker immediately?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$banker:(required)",
+      "dialog_node": "node_4_1597723462941",
+      "previous_sibling": "node_1_1597720521302"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am sorry but we can't help you waive the fee. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1597772473166",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "@requirement_status:(no, I have not reached the requirement)",
+      "dialog_node": "node_4_1597772644573",
+      "previous_sibling": "node_2_1597772696183"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Glad that I could help. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1597721186629",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "@agree_disagree:Okay",
+      "dialog_node": "node_4_1598416665819"
+    },
+    {
+      "type": "standard",
+      "title": "Restart",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How else can I be of assistance?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "years": null,
+        "banker": "not_required",
+        "charged": null,
+        "requirement": null,
+        "web_browser": null,
+        "operating_system": null,
+        "feedback_complaint": null
+      },
+      "dialog_node": "node_5_1597723479325",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The fee will be waived if you have an annual spending of RM25,000. Have you reached the requirement?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597772108069",
+      "conditions": "$years>1 && @charged_status:(is charged)",
+      "dialog_node": "node_5_1597772473166",
+      "previous_sibling": "node_6_1597772404051"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am sorry but we cannot help you to waive the fee. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597723147310",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "@requirement_status:(no, I have not reached the requirement)",
+      "dialog_node": "node_6_1597723422931",
+      "previous_sibling": "node_9_1597723308109"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am sorry to hear that. The fees are charged wrongly. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597772108069",
+      "context": {
+        "banker": "required"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1597723462941"
+      },
+      "conditions": "$years<=1 && @charged_status:(is charged)",
+      "dialog_node": "node_6_1597772404051",
+      "previous_sibling": "node_9_1597772274531"
+    },
+    {
+      "type": "standard",
+      "title": "Bad Customer Service",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm sorry but there could some misunderstandings as our staffs gone through special training course.  Can you tell me specifically what is it related to?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1597720806665",
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1598417184287"
+      },
+      "conditions": "@feedback_complaint_type:(Bad Customer Service)",
+      "dialog_node": "node_6_1597802933346"
+    },
+    {
+      "type": "standard",
+      "title": "ATM Machines",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our ATM machines provide step by step instructions to guide customers. Can you provide more information on that?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1597720806665",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1598417184287"
+      },
+      "conditions": "@feedback_complaint_type:(ATM Machines)",
+      "dialog_node": "node_6_1597803669395",
+      "previous_sibling": "node_6_1597802933346"
+    },
+    {
+      "type": "standard",
+      "title": "Physical Branch Issue",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm sorry but our branches are equipped with the latest technology to serve you. Could you provide more details on that?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1597720806665",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1598417184287"
+      },
+      "conditions": "@feedback_complaint_type:(Physical Branch Issue)",
+      "dialog_node": "node_7_1597803726098",
+      "previous_sibling": "node_6_1597803669395"
+    },
+    {
+      "type": "standard",
+      "title": "Feedback / Complaint",
+      "output": {
+        "generic": [
+          {
+            "title": "May I know what does not meet your satisfaction?",
+            "options": [
+              {
+                "label": "Bad Customer Service",
+                "value": {
+                  "input": {
+                    "text": "Bad Customer Service"
+                  }
+                }
+              },
+              {
+                "label": "ATM Machines",
+                "value": {
+                  "input": {
+                    "text": "ATM Machines"
+                  }
+                }
+              },
+              {
+                "label": "Physical Branch Issue",
+                "value": {
+                  "input": {
+                    "text": "Physical Branch Issue"
+                  }
+                }
+              },
+              {
+                "label": "Internet Banking",
+                "value": {
+                  "input": {
+                    "text": "Internet Banking"
+                  }
+                }
+              }
+            ],
+            "description": "You may type or click one of these options below",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "feedback_complaint": "true"
+      },
+      "conditions": "#Feedback_Complaint",
+      "dialog_node": "node_8_1597720806665",
+      "previous_sibling": "node_5_1597723479325"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The fee will be waived if you have an annual spending of RM25,000. "
+              },
+              {
+                "text": "It seems like you don't have an issue. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1597772108069",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "$years>1 && @charged_status:(not charged)",
+      "dialog_node": "node_8_1597772761893",
+      "previous_sibling": "node_5_1597772473166"
+    },
+    {
+      "type": "standard",
+      "title": "Thanks and will investigate",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your feedback. We will look into it. "
+              },
+              {
+                "text": "Thanks for telling me. We will look into it. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_2_1598417310621",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1598417350350"
+    },
+    {
+      "type": "frame",
+      "title": "Application",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for that. Let me know what is the problem you facing while running our application using $operating_system. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1598426577289",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1598417184287"
+      },
+      "conditions": "@internet_banking_platform:application",
+      "dialog_node": "node_8_1598445115838",
+      "previous_sibling": "node_9_1598426672908"
+    },
+    {
+      "type": "standard",
+      "title": "(yes) charged",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am sorry to hear that. The fees are charged wrongly. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597720654194",
+      "context": {
+        "banker": "required"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1597723462941"
+      },
+      "conditions": "@charged_status:(is charged)",
+      "dialog_node": "node_9_1597720797426"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Don't worry. The fee waiver will be applied automatically for the first three years. "
+              },
+              {
+                "text": "It seems like you don't have an issue. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597721296385",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "$years <= 3 &&  @charged_status:(not charged)",
+      "dialog_node": "node_9_1597722239298"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am sorry to hear that. The fee should be waived. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597723147310",
+      "context": {
+        "banker": "required"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1597723462941"
+      },
+      "conditions": "@requirement_status:(yes, I have reached the requirement)",
+      "dialog_node": "node_9_1597723308109"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sure, I shall direct you to a banker right now. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1597723462941",
+      "conditions": "@need_banker:(yes, I want to talk to a banker)",
+      "dialog_node": "node_9_1597771070632"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Don't worry. The fee waiver will be applied automatically for the first year. "
+              },
+              {
+                "text": "It seems like you don't have an issue. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597772108069",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1597723479325"
+      },
+      "conditions": "$years<=1 && @charged_status:(not charged)",
+      "dialog_node": "node_9_1597772274531"
+    },
+    {
+      "type": "frame",
+      "title": "Website ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for that. Let me know what is the problem you facing while running our website using $web_browser. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1598426577289",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1598417184287"
+      },
+      "conditions": "@internet_banking_platform:website",
+      "dialog_node": "node_9_1598426672908"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1597772108069",
+      "variable": "$charged_status",
+      "dialog_node": "slot_1_1597772191191",
+      "previous_sibling": "slot_3_1597772157114"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1597772108069",
+      "variable": "$year",
+      "dialog_node": "slot_3_1597772157114",
+      "previous_sibling": "handler_1_1597772156442"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1597721296385",
+      "variable": "$years",
+      "dialog_node": "slot_8_1597721466005",
+      "previous_sibling": "handler_1_1597721465237"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1597721296385",
+      "variable": "$charged",
+      "dialog_node": "slot_8_1597722012257",
+      "previous_sibling": "slot_8_1597721466005"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1597723147310",
+      "variable": "$requirement",
+      "dialog_node": "slot_8_1597723232229",
+      "previous_sibling": "handler_2_1597723231659"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1598426672908",
+      "variable": "$web_browser",
+      "dialog_node": "slot_8_1598444959587",
+      "previous_sibling": "handler_1_1598444958726"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1598445115838",
+      "variable": "$operating_system",
+      "dialog_node": "slot_8_1598445140366",
+      "previous_sibling": "handler_2_1598445139667"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1597772473166",
+      "variable": "$requirement_status",
+      "dialog_node": "slot_9_1597772550261",
+      "previous_sibling": "handler_2_1597772549579"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              },
+              {
+                "text": "Hey there! Need any help?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Please do not disclose any personal information to me!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "banker": "not_required",
+        "feedback_complaint": "false"
+      },
+      "conditions": "welcome || #Greetings",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Basic Banking",
+  "language": "en",
+  "description": ""
+}
